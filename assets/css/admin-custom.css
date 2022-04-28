@@ -1,0 +1,346 @@
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #444;
+    background-color: #f1f1f1;
+}
+form.bg-pd {
+    background: #fff;
+    padding: 20px;
+}
+.aip_stt {
+    margin: 20px 20px 0 2px;
+}
+
+.plug_stttitle_settings h2 {
+    font-size: 23px;
+    margin-bottom: 30px;
+}
+.plug_stticon-picker-control {
+    text-align: center;
+}
+/*-----------Tab-----------*/
+.tab-content h3 {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.tab .nav-tabs{
+    border: none;
+    margin: 0;
+}
+.tab .nav-tabs li a{
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #293241;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    z-index: 2;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.tab .nav-tabs li a:hover,
+.tab .nav-tabs li a.active{ border: none; }
+.tab .nav-tabs li a:before{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #f6f6f6;
+    border: 1px solid #e9e9e9;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.tab .nav-tabs li a:after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background: #8224e3;
+    border: 1px solid #8224e3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: all 1s ease 0s;
+}
+.tab .nav-tabs li:hover a:after,
+.tab .nav-tabs li a.active:after{
+    width: 100%;
+    opacity: 1;
+}
+.tab .tab-content{
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    background: #f2f2f2;
+    position: relative;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.tab .nav-tabs li a:focus{
+    box-shadow:none;
+}
+.plug_sttsubmit_btn .submit {
+    text-align: left;
+    max-width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.plug_sttsubmit_btn  #submit {
+    background: #8224e3;
+    border-color: #8224e3;
+    box-shadow: 0 1px 0 #8224e3;
+    text-shadow: 0 -1px 1px #8224e3, 1px 0 1px #8224e3, 0 1px 1px #8224e3, -1px 0 1px #8224e3;
+    color: #fff;
+}
+@media only screen and (max-width: 479px){
+    .tab .nav-tabs li{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .tab .tab-content{ margin-top: 0; }
+}
+/*-------tab end -----*/
+
+.aip_stt-image {
+    display: block;
+    margin-top: 15px;
+}
+
+/*------------Check box cSs----------------*/
+
+.plug_sttcheckbox{
+    display: inline-block;
+}
+.plug_sttcheckbox input[type="checkbox"]{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    border: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: auto;
+    background: #fff;
+    color: #555;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 16px;
+    margin: -4px 4px 0 0;
+    outline: 0;
+    padding: 0!important;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+    min-width: 16px;
+    -webkit-appearance: none;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    transition: .05s border-color ease-in-out;
+}
+.plug_sttcheckbox input[type="checkbox"] + label{
+    cursor: pointer;
+    padding: 2px;
+    width: 42px;
+    height: 16px;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    float: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+}
+.plug_sttcheckbox input[type="checkbox"] + label:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #dddddd;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+    border-radius: 15px;
+}
+.plug_sttcheckbox input[type="checkbox"]:checked + label:before{
+    background-color: #8224e3;
+    margin: 0;
+}
+.plug_sttcheckbox input[type="checkbox"] + label:after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    bottom: 3px;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    -webkit-transition: margin 0.4s, background 0.4s;
+    -moz-transition: margin 0.4s, background 0.4s;
+    -o-transition: margin 0.4s, background 0.4s;
+    transition: margin 0.4s, background 0.4s;
+    border-radius: 50%;
+}
+.plug_sttcheckbox input[type="checkbox"]:checked + label:after{
+    margin-left: 22px;
+}
+.aip_stt-tooltip{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.aip_stt-tooltip .aip_stt-tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: rgba(130, 36, 227, 0.9);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 5px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -90px;
+    font-size: 11px;
+}
+.aip_stt-tooltip-top{
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+.aip_stt-tooltip-top::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #8224e3 transparent transparent transparent;
+}
+.aip_stt-tooltip:hover .aip_stt-tooltiptext {
+    visibility: visible;
+}
+.aip_stt .form-table th {
+    vertical-align: top;
+    text-align: left;
+    padding: 20px 10px 20px 0;
+    width: 250px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+.aip_stt .form-table td input,.aip_stt .form-table td select{
+    width: 200px !important;
+    height: 40px !important;
+    padding: 0 10px !important;
+    border-radius: 4px;
+    border-color: #8224e3 !important;
+}
+
+.aip_stt .form-table td select {
+    background-image: linear-gradient(45deg, transparent 50%, white 60%), linear-gradient(135deg, white 65%, transparent 60%), linear-gradient(to right, #8224e3, #8224e3);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 5px 5px, 5px 5px, 40px 40px;
+    background-repeat: no-repeat;
+    background-color: white;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.plug_stticon-picker-container ul li a span {
+    color: #8124e2;
+}
+.plug_stticon-picker-control a span {
+    color: #8124e2;
+    text-decoration: none !important;
+}
+div.button.plug_stticon-picker {
+    color: #8224e3 !important;
+    border-color: #8224e3 !important;
+    background: #ffffff !important;
+    box-shadow: 0 1px 0 #8224e3 !important;
+}
+.wp-picker-container input[type=text].wp-color-picker, .aip_stt .form-table td .wp-picker-input-wrap .wp-picker-clear {
+    width: 65px !important;
+    height: 24px !important;
+    padding: 0px 5px !important;
+    border-radius: 4px !important;
+    border-color: #ccc !important;
+    background: #f7f7f7 !important;
+    box-shadow: 0 1px 0 #ccc !important;
+}
+.plug_sttimage {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.plug_sttupload_image_button ,.plug_sttremove_image_button  {
+    color: #23282d !important;
+    border-color: #8224e3 !important;
+    background: #ffffff !important;
+    box-shadow: 0 1px 0 #8224e3 !important;
+    padding: 2px 14px !important;
+    height: auto !important;
+}
+.image_active {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: inline-block !important;
+}
+/* 
+input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+input[type="file"] + label {
+    color: #f1e5e6;
+    background-color: #d3394c;
+        max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem
+} */
